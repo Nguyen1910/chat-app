@@ -1,2 +1,4 @@
 chatapp/node_modules
 chatappapi/node_modules
+chatapp/.end
+chatappapi/.env
