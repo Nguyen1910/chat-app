@@ -1,0 +1,29 @@
+.friend-message {
+  .avatar {
+    display: none;
+  }
+}
+
+.my-message + .friend-message {
+  .avatar {
+    display: inline-block;
+  }
+}
+
+.message-list li:nth-child(2) {
+  .avatar {
+    display: inline-block;
+  }
+}
+
+// .friend-message + .friend-message {
+//   .avatar {
+//     display: inline-block;
+//   }
+// }
+
+.textareaCustom {
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}

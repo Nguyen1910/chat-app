@@ -1,0 +1,32 @@
+body {
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey; */
+  background-color: #242526;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #543639;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #543639;
+}
+
+.my-video {
+  video {
+    border-radius: 15px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+}
