@@ -1,8 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import ChatIcon from "../../assets/svg/ChatIcon";
-import { friendService } from "../../services/FriendService";
 import { useSelector } from "react-redux";
-import { userSelector } from "../../store/selector/authSelector";
 import { requestFriendsSelector } from "../../store/selector/friendSelector";
 import { useAppDispatch } from "../../store/store";
 import {

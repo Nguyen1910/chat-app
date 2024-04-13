@@ -1,15 +1,18 @@
-import { useEffect, useMemo } from "react";
-import { useAppContext } from "../../Context/AppProvider";
+import { useMemo } from "react";
 import { useParams } from "react-router-dom";
 import RemoveFill from "../../assets/svg/RemoveFill";
 import Info from "../../assets/svg/Info";
+import { useSelector } from "react-redux";
+import { conversationListSelector } from "../../store/selector/conversationSelector";
 
 const InfoConversation = () => {
-  const { conversations } = useAppContext();
+  const conversationList = useSelector(conversationListSelector);
   const { currentConversationId } = useParams();
   const currConversation = useMemo(() => {
     if (currentConversationId) {
-      return conversations?.find((item) => item._id === currentConversationId);
+      return conversationList?.find(
+        (item) => item._id === currentConversationId
+      );
     }
   }, [currentConversationId]);
 
