@@ -7,11 +7,7 @@ interface InputSearchInterface {
   placeholder: string;
 }
 
-const InputSearch = ({
-  value,
-  setValue,
-  placeholder,
-}: InputSearchInterface) => {
+const InputSearch = ({ setValue, placeholder }: InputSearchInterface) => {
   return (
     <div className="h-12 p-2 rounded-3xl overflow-hidden bg-[#543639] flex items-center bg-opacity-50">
       <SearchIcon color="white" className="" />
