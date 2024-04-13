@@ -1,7 +1,6 @@
-import React from "react";
 import { IconProps } from "../../types/icons";
 
-const ChatIcon = ({ color, className, onClick }: IconProps) => {
+const ChatIcon = ({ color, className }: IconProps) => {
   return (
     <svg
       width="24"

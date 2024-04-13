@@ -1,4 +1,3 @@
-import React from "react";
 import { IconProps } from "../../types/icons";
 
 const BookmarkIcon = ({ color, className }: IconProps) => {
